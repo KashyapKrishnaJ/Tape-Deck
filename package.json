@@ -1,0 +1,31 @@
+{
+  "name": "tape-deck",
+  "version": "2.0.0",
+  "description": "An 80s-style cassette music player",
+  "author": "Your Name",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "dependencies": { "music-metadata": "^7.14.0" },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.tapedeck.player",
+    "productName": "Tape Deck",
+    "files": ["main.js", "preload.js", "index.html", "package.json"],
+    "directories": { "output": "dist", "buildResources": "build" },
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64", "ia32", "arm64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "nsis": { "buildUniversalInstaller": false },
+    "mac": { "target": "dmg", "category": "public.app-category.music" },
+    "linux": { "target": ["AppImage", "deb"], "category": "Audio" }
+  }
+}

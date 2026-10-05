@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- tile -->
+  <rect x="32" y="32" width="960" height="960" rx="220" fill="#d5ccb4"/>
+  <rect x="32" y="32" width="960" height="960" rx="220" fill="none" stroke="#857b64" stroke-width="10"/>
+  <!-- cassette body -->
+  <rect x="150" y="270" width="724" height="484" rx="48" fill="#2d2a26"/>
+  <!-- label with red top stripe -->
+  <rect x="204" y="320" width="616" height="230" rx="18" fill="#e9e1cb"/>
+  <path d="M222 320h580a18 18 0 0 1 18 18v14H204v-14a18 18 0 0 1 18-18z" fill="#a8432d"/>
+  <!-- LCD strip with amber segments -->
+  <rect x="290" y="396" width="444" height="76" rx="12" fill="#1b1409"/>
+  <rect x="316" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="366" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="416" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="466" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="516" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="566" y="414" width="38" height="44" rx="4" fill="#f0a840"/><rect x="616" y="414" width="38" height="44" rx="4" fill="#4a3a1c"/><rect x="666" y="414" width="38" height="44" rx="4" fill="#4a3a1c"/>
+  <!-- tape window and reels -->
+  <rect x="316" y="580" width="392" height="124" rx="62" fill="#14110e"/>
+  <g fill="#e9e1cb">
+    <circle cx="412" cy="642" r="46"/><circle cx="612" cy="642" r="46"/>
+  </g>
+  <g fill="#14110e">
+    <circle cx="412" cy="642" r="26"/><circle cx="612" cy="642" r="26"/>
+  </g>
+  <g stroke="#e9e1cb" stroke-width="9" stroke-linecap="round">
+    <path d="M412 622v40M395 632l34 20M395 652l34-20"/>
+    <path d="M612 622v40M595 632l34 20M595 652l34-20"/>
+  </g>
+</svg>
